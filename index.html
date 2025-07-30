@@ -1,92 +1,125 @@
-<!-- SWPS Website - Modern Design Style -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SWPS - Growtopia Private Server</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <title>SWPS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
   <style>
     body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
+      color: white;
       text-align: center;
-      padding: 2em;
     }
 
-    h1 {
-      font-size: 3em;
-      color: #00e0ff;
-      text-shadow: 0 0 10px #00e0ff;
+    header {
+      padding: 20px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5em;
+      color: #00ffff;
+      letter-spacing: 2px;
     }
 
     .status {
-      margin-top: 10px;
-      font-size: 1.2em;
-      background: #ffc107;
-      color: #333;
-      display: inline-block;
-      padding: 0.5em 1.5em;
-      border-radius: 50px;
+      color: yellow;
+      margin-bottom: 15px;
     }
 
     .button {
       display: block;
-      margin: 1em auto;
-      padding: 1em;
-      width: 90%;
+      width: 80%;
       max-width: 300px;
-      font-weight: bold;
-      text-decoration: none;
+      margin: 10px auto;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
       color: white;
-      border-radius: 12px;
-      transition: 0.3s;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
     }
 
-    .purple { background: linear-gradient(45deg, #a64bf4, #f84aa7); }
-    .blue { background: linear-gradient(45deg, #00c6ff, #0072ff); }
-    .green { background: linear-gradient(45deg, #00ffcc, #00c9a7); }
+    .download { background: linear-gradient(90deg, #11998e, #38ef7d); }
+    .trident  { background: linear-gradient(90deg, #396afc, #2948ff); }
+    .ios      { background: linear-gradient(90deg, #00c9ff, #92fe9d); }
 
     .button:hover {
-      transform: scale(1.05);
+      opacity: 0.85;
+    }
+
+    .host-box {
+      background: rgba(255,255,255,0.1);
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      font-family: monospace;
+    }
+
+    .tab-section {
+      background: rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 500px;
+    }
+
+    .connection-info {
+      margin-top: 20px;
+      font-size: 0.9em;
       opacity: 0.9;
     }
 
-    .hosts {
-      background: #111;
-      color: #0f0;
-      padding: 1em;
-      margin: 1em auto;
-      border-radius: 10px;
-      width: fit-content;
+    .connection-info img {
+      vertical-align: middle;
+      width: 20px;
     }
 
-    footer {
-      margin-top: 3em;
-      font-size: 0.8em;
-      color: #ccc;
+    .graph-placeholder {
+      margin: 10px auto;
+      height: 80px;
+      width: 90%;
+      max-width: 400px;
+      background: #fff1;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
+  <header>SWPS</header>
+  <div class="status">
+    🟡 Server Status: Maintenance for 10:42:59
+  </div>
 
-  <h1>SWPS</h1>
-  <div class="status">🟡 Server Status: Maintenance</div>
+  <a href="https://www.mediafire.com/file/ntm350bmfbq9fi8/SWPS.txt/file" class="button download">⬇️ Download Host (VHost)</a>
+  <a href="https://growsoft.cc/android.txt" class="button trident">🎮 Launch with Trident</a>
+  <a href="https://growsoft.cc/ios.txt" class="button ios">🍏 Copy iOS Host (Surge 5)</a>
 
-  <a href="https://example.com/script" class="button purple" target="_blank">My Growsoft Script Project</a>
-  <a href="https://example.com/vhost.txt" class="button blue" target="_blank">Download Host (VHost)</a>
-  <a href="https://example.com/trident" class="button green" target="_blank">Launch with Trident</a>
-  <a href="https://example.com/ios.txt" class="button green" target="_blank">Copy iOS Host</a>
-
-  <div class="hosts">
-    91.134.85.13 growtopia1.com<br>
-    91.134.85.13 growtopia2.com<br>
-    91.134.85.13 www.growtopia1.com<br>
+  <div class="host-box">
+    91.134.85.13 growtopia1.com<br />
+    91.134.85.13 growtopia2.com<br />
+    91.134.85.13 www.growtopia1.com<br />
     91.134.85.13 www.growtopia2.com
   </div>
 
-  <footer>&copy; 2025 SWPS GTPS. All rights reserved.</footer>
+  <div class="tab-section">
+    <h3>Android</h3>
+    <ol style="text-align:left; max-width: 400px; margin:auto;">
+      <li>⬇️ Download Powertunnel APP dari <a href="#">sini</a>.</li>
+      <li>🔌 Klik tombol "Launch with Trident" di atas.</li>
+      <li>📱 Buka aplikasi Powertunnel, ketuk ikon ☰ lalu ⚙️.</li>
+      <li>📂 Tempel URL yang sudah disalin dan ubah "Update period" ke "On start".</li>
+      <li>📝 Masukkan nama server: <strong>SWPS</strong></li>
+    </ol>
+  </div>
 
+  <div class="connection-info">
+    <div class="graph-placeholder">[ Grafik koneksi dummy ]</div>
+    🌐 IP: 140.213.100.165 &nbsp;&nbsp;🇮🇩 ID &nbsp;&nbsp; Ping: 115 ms
+  </div>
 </body>
 </html>
